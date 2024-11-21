@@ -14,7 +14,7 @@ st.write("This app predicts the **Impact of Climate Change on Agricultural Produ
 
 
 # Sidebar for user input
-st.sidebar.header("Input Features 🌟")
+st.sidebar.header("Input Features")
 st.sidebar.markdown("Adjust the sliders and inputs below to customize the prediction.")
 
 # Input fields
@@ -45,7 +45,7 @@ st.markdown("---")
 # Display user input
 
 # Display input data
-st.subheader("🔍 User Input Summary")
+st.subheader("User Input Summary")
 st.dataframe(input_df, width=700)
 
 st.markdown("---")
