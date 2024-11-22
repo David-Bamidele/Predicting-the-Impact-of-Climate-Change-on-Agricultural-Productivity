@@ -7,7 +7,7 @@ import joblib
 # Load the pre-trained model  
 @st.cache_resource
 def load_model():
-    return joblib.load("Desktop/ClimateAgric.pkl")
+    return joblib.load("ClimateAgric.pkl")
 model = load_model()
 
 # Set up the Streamlit app
