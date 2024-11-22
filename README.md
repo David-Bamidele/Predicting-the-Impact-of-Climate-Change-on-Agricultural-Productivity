@@ -57,8 +57,8 @@ The dataset contains information about various climate and agricultural factors 
      ```
      Features:
      'Average_Temperature_C', 'Total_Precipitation_mm', 'CO2_Emissions_MT', 
-     'Extreme_Weather_Events', 'Irrigation_Access_%', 'Pesticide_Use_KG_per_HA', 
-     'Fertilizer_Use_KG_per_HA', 'Soil_Health_Index'
+     'Extreme_Weather_Events', 'Pesticide_Use_KG_per_HA', 
+     'Fertilizer_Use_KG_per_HA',
      ```
      - Target: `Crop_Yield_MT_per_HA`
 
@@ -93,11 +93,13 @@ The dataset contains information about various climate and agricultural factors 
 
 The best model, **Gradient Boosting Regressor**, achieved the highest accuracy. Below are the evaluation metrics for the models:
 
-| **Model**                  | **MAE**   | **MSE**   | **R² Score** |
-|----------------------------|-----------|-----------|--------------|
-| Linear Regression          | 421.50    | 212345.23 | 0.2500       |
-| Random Forest Regressor    | 312.40    | 167890.14 | 0.3891       |
-| **Gradient Boosting**      | **301.55**| **150234.98** | **0.4723** |
+
+| **Model**                  | **MAE**       | **MSE**     | **R² Score** |
+|----------------------------|---------------|-------------|--------------|
+| Linear Regression          | 0.814320545   | 0.983519670 | 0.0681706    |
+| Random Forest Regressor    | 0.7272096     | 0.7474276   | 0.29185449   |
+| **Gradient Boosting**      | **0.71851841**| **0.7177450** | **0.3199771** |
+| XGBoost Regressor          | 0.72828064    | 10.7523119 | 0.287226921       |
 
 ---
 
