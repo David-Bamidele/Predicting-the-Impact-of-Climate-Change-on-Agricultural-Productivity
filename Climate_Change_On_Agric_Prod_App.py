@@ -4,9 +4,11 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-# Load the pre-trained model
-model = joblib.load("Desktop/ClimateAgric.pkl")  
-
+# Load the pre-trained model  
+@st.cache_resource
+def load_model():
+    return joblib.load("Desktop/ClimateAgric.pkl")
+model = load_model()
 
 # Set up the Streamlit app
 st.title('Predicting the Impact of Climate Change on Agricultural Productivity')
