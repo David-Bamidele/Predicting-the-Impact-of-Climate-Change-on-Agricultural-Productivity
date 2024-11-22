@@ -11,7 +11,7 @@ def load_model():
 model = load_model()
 
 # Set up the Streamlit app
-st.title('Predicting the Impact of Climate Change on Agricultural Productivity')
+st.title('Predicting the Impact of Climate Change on Agricultural Productivity :earth_americas:')
 st.write("This app predicts the **Impact of Climate Change on Agricultural Productivity**.")
 
 
